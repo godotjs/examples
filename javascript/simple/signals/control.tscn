@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwn4tbd0amti6"]
+
+[ext_resource type="Script" path="res://my-class.mjs" id="1_m1o40"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m1o40")
+
+[connection signal="child_entered_tree" from="." to="." method="childEnteredTree"]
+[connection signal="my_custom_signal" from="." to="." method="triggerCustomSignal"]
